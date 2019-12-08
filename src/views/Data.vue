@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     handleClick: function (value) {
-      console.log(value)
+      //console.log(value)
       this.selectedRowV=value.name
     }
   },
