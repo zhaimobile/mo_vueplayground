@@ -19,14 +19,21 @@
         @click:row="handleClick"
       ></v-data-table>
     </v-card>
+    <DetailDataResult2 link="link=eeee" info='info=ddfsdfs'/>
   </div> 
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+//import DetailDataResult from "@/components/DetailDataResult.vue";
+import DetailDataResult2 from "@/components/DetailDataResult.vue";
+
 
 export default {
   name: "data_dash1",
+  components: {
+    DetailDataResult2
+  },
   mounted () {
     axios
       .get('https://api.coindesk.com/v1/bpi/currentprice.json')
