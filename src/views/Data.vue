@@ -16,6 +16,7 @@
         :headers="headers"
         :items="desserts"
         :search="search"
+        @click:row="handleClick"
       ></v-data-table>
     </v-card>
   </div> 
@@ -30,6 +31,11 @@ export default {
     axios
       .get('https://api.coindesk.com/v1/bpi/currentprice.json')
       .then(response => (this.info = response.data))
+  },
+  methods: {
+    handleClick: function (value) {
+      console.log(value)
+    }
   },
   data: () => ({
     search: "",
