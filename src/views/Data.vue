@@ -19,7 +19,7 @@
         @click:row="handleClick"
       ></v-data-table>
     </v-card>
-    <DetailDataResult2 link="link=eeee" info='info=ddfsdfs'/>
+    <DetailDataResult2 link="link=eeee" :info="selectedRowV"/>
   </div> 
 </template>
 
@@ -34,7 +34,7 @@ export default {
   components: {
     DetailDataResult2
   },
-  mounted () {
+  mounted() {
     axios
       .get('https://api.coindesk.com/v1/bpi/currentprice.json')
       .then(response => (this.info = response.data))
@@ -42,11 +42,13 @@ export default {
   methods: {
     handleClick: function (value) {
       console.log(value)
+      this.selectedRowV=value.name
     }
   },
   data: () => ({
     search: "",
     info: null,
+    selectedRowV: "",
     headers: [
       {
         text: "Dessert (100g serving)",
