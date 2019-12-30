@@ -29,7 +29,9 @@
       <div id="nav"> 
         <router-link to="/">Home </router-link> 
         <router-link to="/data">Data </router-link>
+        <router-link to="/meizi">Mei Zi </router-link>
         <router-link to="/about">About </router-link>
+
       </div>
       <router-view/>
     </div>
@@ -47,6 +49,7 @@ export default {
 
 <style scoped>
   .router-div{
-    margin-top: 56px
+    margin-top: 56px;
+    padding: 10px
   }
 </style>
