@@ -48,7 +48,7 @@ export default {
   methods: {
     get_img_url: function (n) {
       //console.log(value)
-      return this.image_lists[n+2000].src
+      return this.image_lists[n].src
     }
   },
 }
