@@ -24,4 +24,4 @@ yarn lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-https://practical-payne-357651.netlify.com
+https://practical-payne-357651.netlify.com/#/meizi
