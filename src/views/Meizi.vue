@@ -8,7 +8,7 @@
                 v-for="n in 320"
                 :key="n"
                 class="d-flex child-flex"
-                cols="1" sm="1" md="4" lg="2" xl="2"
+                cols="12" sm="6" md="4" lg="3" xl="2"
               >
                 <v-card flat tile class="d-flex">
                   <v-img
